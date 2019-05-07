@@ -120,7 +120,12 @@ public class Update {
 
             @Override
             public void error(Exception e) {
-
+                mainHandler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        Toast.makeText(context,"服务器异常，请稍后重试",Toast.LENGTH_LONG).show();
+                    }
+                });
             }
         });
 

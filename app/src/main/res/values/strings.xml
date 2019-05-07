@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">SimpleTranslation</string>
     <string name="app_name_ZN">轻巧翻译</string>
+    <string name="pop_dw">一款小清新软件，每日随机获取一张外网大师作品</string>
 </resources>

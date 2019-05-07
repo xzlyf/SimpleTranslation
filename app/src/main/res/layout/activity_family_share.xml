@@ -7,5 +7,82 @@
     android:background="?attr/colorPrimary"
     tools:context=".FamilyShare">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="家族软件"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        android:textSize="30sp"
+        />
+
+    <LinearLayout
+        android:id="@+id/dw_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <!--每日壁纸-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/icons"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon_dw" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary_text"
+                    android:text="每日壁纸"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/pop_dw" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/download_1"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/download_btn_select"
+                android:text="下载"
+                android:textColor="@color/icons" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dw_layout"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        android:text="敬请期待" />
+
+    <TextView
+        android:id="@+id/my_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="25dp"
+        android:text="©小泽零又疯工作室" />
 
 </RelativeLayout>
